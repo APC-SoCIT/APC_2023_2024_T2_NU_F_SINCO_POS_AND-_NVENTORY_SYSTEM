@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/CheckoutBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardElevation="1dp"
+                android:layout_margin="0dp">
+
+                <!-- Your card content goes here -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightcolor"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/Checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andadapro_bold"
+                android:gravity="center"
+                android:text="Checkout"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ProductsCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/assistant_variablefont_wght"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/SubtotalCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Subtotal:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/DiscountCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Discount:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/linesCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/PaymentMethodCheckout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Payment Method:"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/TotalCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Total:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/CashCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cash:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ChangeCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Change:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+                    <!-- Add this EditText for user input -->
+                    <EditText
+                        android:id="@+id/cashInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Cash Amount"
+                        android:inputType="numberDecimal"
+                        android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <!-- Quantity TextView -->
+
+                <Button
+                    android:id="@+id/backbutton"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    app:cardBackgroundColor="#000000"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="Back"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:id="@+id/Confirmbutton"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/selectednav"
+                    android:textColor="@color/lightcolor"
+                    android:text="Confirm"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>

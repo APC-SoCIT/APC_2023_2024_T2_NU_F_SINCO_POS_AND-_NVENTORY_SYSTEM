@@ -1,0 +1,79 @@
+<!-- row_layout.xml -->
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Code -->
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Item Type -->
+    <TextView
+        android:id="@+id/textViewItemType"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/textViewQty"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginStart="3dp"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Cost -->
+    <TextView
+        android:id="@+id/textViewItemCost"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Reorder -->
+    <TextView
+        android:id="@+id/textViewReorder"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+    <!-- Notes -->
+    <TextView
+        android:id="@+id/textViewNotes"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""/>
+
+
+</TableRow>

@@ -1,0 +1,19 @@
+<!-- button_outline.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Outer background color (outline) -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Border color and width -->
+    <stroke
+        android:color="@color/lightcolor"
+    android:width="2dp" />
+
+    <!-- Inner background color (fill) -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Corner radius -->
+    <corners android:radius="8dp" /> <!-- Adjust the radius as needed -->
+
+</shape>

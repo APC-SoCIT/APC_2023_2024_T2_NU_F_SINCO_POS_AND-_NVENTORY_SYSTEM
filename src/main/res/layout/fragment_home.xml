@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/andadapro_bold"
+                    android:gravity="left"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="38sp" />
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="291dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/searchbar"
+                    android:padding="4dp"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@null"
+                    app:queryHint="Search" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bestselling"
+                    android:layout_width="0dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    android:outlineAmbientShadowColor="#202020"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+
+                    <TextView
+                        android:layout_width="546dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/assistant_variablefont_wght"
+                        android:gravity="left"
+                        android:text="Best Selling"
+                        android:textColor="@color/grey"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="50dp"
+                                        android:layout_marginTop="70dp"
+                                        android:layout_marginRight="15dp"
+                                        android:src="@drawable/kape" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="70dp"
+                                        android:layout_marginRight="15dp"
+                                        android:src="@drawable/kape" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="70dp"
+                                        android:layout_marginRight="15dp"
+                                        android:src="@drawable/kape" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="70dp"
+                                        android:layout_marginRight="15dp"
+                                        android:src="@drawable/kape" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="70dp"
+                                        android:layout_marginRight="15dp"
+                                        android:src="@drawable/kape" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="75dp"
+                                        android:fontFamily="@font/assistant_variablefont_wght"
+                                        android:gravity="center"
+                                        android:text="Flavor"
+                                        android:textColor="@color/grey"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="75dp"
+                                        android:fontFamily="@font/assistant_variablefont_wght"
+                                        android:gravity="center"
+                                        android:text="Flavor"
+                                        android:textColor="@color/grey"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="75dp"
+                                        android:fontFamily="@font/assistant_variablefont_wght"
+                                        android:gravity="center"
+                                        android:text="Flavor"
+                                        android:textColor="@color/grey"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="75dp"
+                                        android:fontFamily="@font/assistant_variablefont_wght"
+                                        android:gravity="center"
+                                        android:text="Flavor"
+                                        android:textColor="@color/grey"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="75dp"
+                                        android:fontFamily="@font/assistant_variablefont_wght"
+                                        android:gravity="center"
+                                        android:text="Flavor"
+                                        android:textColor="@color/grey"
+                                        android:textSize="24sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lowstocks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    android:outlineAmbientShadowColor="#202020"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+
+                    <!-- Caramel CardView -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="312dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Low Stocks"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Caramel TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Caramel"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Caramel Low Stocks Numerical -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="right"
+                                    android:text="10"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            android:outlineAmbientShadowColor="#202020"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Milk TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Milk"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Milk Low Stocks Numerical -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="right"
+                                    android:text="8"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            android:outlineAmbientShadowColor="#202020"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Coffee Beans TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Coffee Beans"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Coffee Beans Low Stocks Numerical -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="right"
+                                    android:text="12"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Milk CardView -->
+
+                    <!-- Coffee Beans CardView -->
+
+                    <!-- Other Ingredients can be added similarly -->
+
+                    <!-- Low Stocks -->
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/salessummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+
+
+                    <!-- Sales CardView -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="312dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Sales Summary"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Date"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="left"
+                                    android:text="Random"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Date"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="left"
+                                    android:text="Random"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="@color/ingredients"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/assistant_variablefont_wght"
+                                    android:gravity="left"
+                                    android:text="Date"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <!-- Sales TextView -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/andadapro_bold"
+                                    android:gravity="left"
+                                    android:text="Random"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

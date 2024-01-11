@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F4E8E8"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".Activity.LoginActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/cardviewoutline"
+        android:backgroundTint="@color/lightcolor"
+        android:elevation="8dp"
+        android:foregroundGravity="center"
+        android:outlineAmbientShadowColor="#202020"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <!-- Image -->
+
+            <Button
+                android:id="@+id/btnchangeuser"
+                android:layout_width="32dp"
+                android:layout_height="38dp"
+                android:drawableLeft="@drawable/baseline_arrow_forward_24"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingTop="-6dp"
+                android:rotationY="-180"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinCodeNumbersGrid"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="Forgot Password?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="231dp"
+                android:layout_height="63dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sincopinlogo" />
+
+
+            <!-- Pin Code Circles -->
+            <LinearLayout
+                android:id="@+id/pinCodeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <!-- Four circles for pin code input -->
+                <View
+                    android:id="@+id/circle1"
+                    style="@style/CirclenotFilled"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <View
+                    android:id="@+id/circle2"
+                    style="@style/CirclenotFilled"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <View
+                    android:id="@+id/circle3"
+                    style="@style/CirclenotFilled"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <View
+                    android:id="@+id/circle4"
+                    style="@style/CirclenotFilled"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+
+            <!-- Pin Code Numbers -->
+            <GridLayout
+                android:id="@+id/pinCodeNumbersGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pinCodeLayout"
+                android:layout_centerHorizontal="true"
+                android:columnCount="3"
+                android:foregroundGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.8">
+
+                <!-- Buttons for pin code numbers -->
+
+                <Button
+                    android:id="@+id/pin1btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:outlineProvider="paddedBounds"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin2btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin3btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin4btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin5btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin6btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin7btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin8btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/pin9btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="77dp"
+                    android:layout_height="46dp"
+                    android:backgroundTint="@color/pin"
+                    android:gravity="center"
+                    android:text="Clear"
+                    android:textColor="@color/lightcolor"
+                    android:textSize="12sp"
+                    app:cornerRadius="6dp" />
+
+                <Button
+                    android:id="@+id/pin0btn"
+                    android:layout_width="72dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@drawable/delete"
+                    android:textSize="40sp" />
+
+                <!-- Change user btn -->
+
+
+            </GridLayout>
+
+            <!-- Forgot Password Link -->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

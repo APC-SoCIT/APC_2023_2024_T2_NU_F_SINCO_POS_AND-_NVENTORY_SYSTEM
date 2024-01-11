@@ -1,0 +1,54 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CODE" />
+
+        <EditText
+            android:id="@+id/editTextItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ITEM NAME" />
+
+        <EditText
+            android:id="@+id/editTextItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ITEM TYPE" />
+
+        <EditText
+            android:id="@+id/editTextQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="QTY" />
+
+        <EditText
+            android:id="@+id/editTextItemCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ITEM COST" />
+
+        <EditText
+            android:id="@+id/editTextReorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="REORDER" />
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOTES" />
+    </LinearLayout>
+</ScrollView>

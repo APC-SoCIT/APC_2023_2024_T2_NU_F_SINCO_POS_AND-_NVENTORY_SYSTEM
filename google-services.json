@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "519125946558",
+    "firebase_url": "https://sinco-pos-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sinco-pos",
+    "storage_bucket": "sinco-pos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519125946558:android:f108ebec25c077362aceef",
+        "android_client_info": {
+          "package_name": "com.example.sincopossystemfullversion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaX1idJ2MPMz317lnrhAaAi6FS0tvPdgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

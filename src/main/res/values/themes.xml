@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SincoPosSystemFullVersion" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimaryVariant">@color/selectednav</item>
+        <item name="colorPrimary">@color/lightcolor</item>
+        <item name="colorOnPrimary">@color/grey</item>
+    </style>
+
+    <style name="Theme.SincoPosSystemFullVersion" parent="Base.Theme.SincoPosSystemFullVersion" />
+
+</resources>
