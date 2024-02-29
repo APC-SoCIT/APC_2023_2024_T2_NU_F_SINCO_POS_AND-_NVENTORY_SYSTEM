@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CheckoutBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightcolor"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="0dp"
+            android:layout_margin="0dp">
+
+            <!-- Your card content goes here -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="410dp"
+                android:background="@color/lightcolor"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Left side with Checkout and Customer Image -->
+                <LinearLayout
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Checkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="Checkout"
+                        android:textColor="@android:color/black"
+                        android:textSize="50sp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/customercardview"
+                        android:layout_width="277dp"
+                        android:backgroundTint="@color/selectednav"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="276dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+
+                            <!-- Print Receipt (Bluetooth) -->
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/PrintCardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="@color/lightcolor"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <!-- ImageView for printing -->
+                                    <ImageView
+                                        android:id="@+id/ImageViewPrint"
+                                        android:layout_width="187dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:src="@drawable/printicon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+                <!-- Right side with Product details -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CheckoutTable"
+                    android:layout_width="30dp"
+                    android:layout_height="213dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightcolor"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp">
+
+                    <!-- Header TableLayout -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="?android:attr/dividerHorizontal"
+                        android:showDividers="beginning|middle|end"
+                        android:stretchColumns="1,2,3,4">
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/tblcheckoutproducts"
+                                android:layout_width="113dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/selectednav"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Products"
+                                android:textColor="@color/lightcolor" />
+
+                            <TextView
+                                android:id="@+id/tblcheckoutqty"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/selectednav"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Qty"
+                                android:textColor="@color/lightcolor" />
+
+                            <TextView
+                                android:id="@+id/tblcheckoutsize"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/selectednav"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Size"
+                                android:textColor="@color/lightcolor" />
+
+                            <TextView
+                                android:id="@+id/tblcheckoutprice"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/selectednav"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Price"
+                                android:textColor="@color/lightcolor" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/CheckoutRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="172dp"
+                        android:layout_marginTop="36dp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="753dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="250dp"
+                android:orientation="vertical">
+
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <EditText
+                        android:id="@+id/CashInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter cash amount"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- Discount
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                   <EditText
+                        android:id="@+id/DiscountInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter discount amount"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+               <!-- <TextView
+                    android:id="@+id/DiscountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discount: ₱0.00 " /> -->
+
+                <TextView
+                    android:id="@+id/CheckoutSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subtotal:" />
+
+
+
+                <TextView
+                    android:id="@+id/CheckoutTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total:" />
+
+                <TextView
+                    android:id="@+id/CheckoutChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change:" />
+
+
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+
+
+          <!-- Bottom buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/backbutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="#000000"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/lightcolor"
+                android:text="Back"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Confirmbutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/selectednav"
+                android:textColor="@color/lightcolor"
+                android:text="Confirm"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

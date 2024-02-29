@@ -1,0 +1,11 @@
+<!-- arrow_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size
+        android:width="12dp"
+        android:height="12dp" />
+    <solid android:color="#393939" /> <!-- Arrow color -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 L12,0 L6,12 Z" /> <!-- Triangle path for arrow -->
+</shape>

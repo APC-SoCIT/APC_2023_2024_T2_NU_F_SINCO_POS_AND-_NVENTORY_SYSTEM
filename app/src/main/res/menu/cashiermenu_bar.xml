@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_products"
+        android:icon="@drawable/products"
+        android:title="Products" />
+    <item
+        android:id="@+id/tab_salesreport"
+        android:icon="@drawable/salesreport"
+        android:title="Sales" />
+    <item
+        android:id="@+id/tab_inventory"
+        android:icon="@drawable/inventory"
+        android:title="Inventory" />
+    <item
+        android:id="@+id/tab_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/tab_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+</menu>

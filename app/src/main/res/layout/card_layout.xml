@@ -1,0 +1,243 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightcolor"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/ProductTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andadapro_bold"
+                android:gravity="center"
+                android:text="Coffee"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/kape"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProductTitle" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <!-- Circular CardView 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardUNO"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/TextUNO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="14sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDOS"
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/TextDOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Circular CardView 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTRES"
+                    android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/TextTRES"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Circular CardView 4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardQUATRO"
+                    android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circular_background"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/TextQUATRO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Circular CardView 5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSINCO"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_background"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="4dp">
+
+
+                    <TextView
+                        android:id="@+id/TextSINCO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/PriceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Price"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:id="@+id/pdefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Quantity TextView -->
+                <ImageButton
+                    android:id="@+id/positiveIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_add_circle_outline_24" />
+
+                <TextView
+                    android:id="@+id/quantityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/negativeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/baseline_remove_circle_24" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/addbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:backgroundTint="@color/selectednav"
+                    android:text="Add"
+                    android:textColor="@color/lightcolor"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

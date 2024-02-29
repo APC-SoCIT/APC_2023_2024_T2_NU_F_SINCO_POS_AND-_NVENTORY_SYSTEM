@@ -1,0 +1,56 @@
+<!-- row_layout.xml -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tableLayout"
+    android:stretchColumns="1,2,3,4">
+
+        <!-- TableRow 1 (Fixed Header) -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/userstv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/pincodetv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/editIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/baseline_edit_note_24" />
+
+                <ImageView
+                    android:id="@+id/deleteIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/baseline_delete_forever_24" />
+            </LinearLayout>
+
+            <!-- Add more TextViews for additional columns -->
+        </TableRow>
+
+</TableLayout>

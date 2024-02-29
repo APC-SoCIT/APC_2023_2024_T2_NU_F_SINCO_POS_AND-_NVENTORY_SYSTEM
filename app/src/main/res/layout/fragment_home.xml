@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/andadapro_bold"
+                    android:gravity="left"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="38sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/usernameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/andadapro_bold"
+                    android:gravity="left"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/salesanalytics"
+                    android:layout_width="268dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    android:outlineAmbientShadowColor="#202020"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+                    <ProgressBar
+                        android:id="@+id/SalesprogressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminateTint="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Sales Overview"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/salesOverviewRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bestselling"
+                    android:layout_width="0dp"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    android:outlineAmbientShadowColor="#202020"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/BestSellingprogressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminateTint="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="546dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Best Selling"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/monthTV"
+                            android:layout_width="546dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="-5dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="month"
+                            android:textColor="@color/grey"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/bestSellingRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lowstocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+
+
+                    <!-- Sales CardView -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="312dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Low Stocks"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/ingredients"
+                                android:fontFamily="@font/andadapro_bold"
+                                android:gravity="left"
+                                android:text="Product"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/ingredients"
+                                android:fontFamily="@font/andadapro_bold"
+                                android:text="Quantity"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/homelowstockRv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </ScrollView>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/salessummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="#EBDFD3"
+                    android:backgroundTint="#EBDFD3"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp">
+
+
+
+                    <!-- Sales CardView -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="312dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/assistant_variablefont_wght"
+                            android:gravity="left"
+                            android:text="Sales Summary"
+                            android:textColor="@color/grey"
+                            android:textSize="28sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/ingredients"
+                                android:fontFamily="@font/andadapro_bold"
+                                android:gravity="left"
+                                android:text="Month"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/ingredients"
+                                android:fontFamily="@font/andadapro_bold"
+                                android:text="Total Sales"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/homesalesRV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </ScrollView>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

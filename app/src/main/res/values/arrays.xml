@@ -1,0 +1,44 @@
+<resources>
+    <string-array name="product_types">
+        <item>Coffee</item>
+        <item>Pastries</item>
+        <item>Non-Coffee</item>
+        <item>Cookies</item>
+        <item>Traditional Coffee</item>
+        <item>Sinco Floaters</item>
+        <item>MockTails</item>
+        <item>Sinco Signature</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="item_types">
+        <item>Ground coffee</item>
+        <item>Tea</item>
+        <item>Milk and Cream</item>
+        <item>Sweeteners</item>
+        <item>Syrups and flavorings</item>
+        <item>Ice</item>
+    </string-array>
+
+
+    <string-array name="users">
+        <item>Admin</item>
+        <item>Cashier 1</item>
+        <item>Cashier 2</item>
+        <item>Cashier 3</item>
+    </string-array>
+</resources>

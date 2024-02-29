@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Circle Style -->
+    <style name="CirclenotFilled">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/circle_pin_background</item>
+    </style>
+
+
+    <!-- Circle Style -->
+    <style name="CircleFilled">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/circle_pin_background_white</item>
+    </style>
+
+
+
+        <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+            <item name="android:textColor">#000000</item>
+        </style>
+
+
+
+
+
+
+</resources>

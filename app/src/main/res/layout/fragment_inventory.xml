@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.InventoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/pin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/productsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/andadapro_bold"
+                        android:gravity="left"
+                        android:text="Inventory"
+                        android:textColor="@color/black"
+                        android:textSize="38sp" />
+
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="291dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/searchbar"
+                        android:padding="4dp"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@null"
+                        app:queryHint="Search Ingredient" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <!-- First CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/lightcolor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp">
+
+                        <!-- Your content for the first CardView -->
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/baseline_all_inbox_24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/TotalProducts"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Total Products"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalprodCount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/andadapro_bold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textSize="24sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Second CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/lightcolor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp">
+
+                        <!-- Your content for the second CardView -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/baseline_all_inbox_24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/LowStockProducts"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Low Stock Products"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/lowstockCount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/andadapro_bold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textSize="24sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Third CardView -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/lightcolor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp">
+
+                        <!-- Your content for the third CardView -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/baseline_all_inbox_24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/OutofStocks"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Out of Stocks Products"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/outofstockCount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/andadapro_bold"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textSize="24sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Small icon addinventory -->
+
+                    <!-- Small icon notes -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/archivedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="13sp"
+                        android:text="See Archived Items" />
+
+                    <ImageView
+                        android:id="@+id/addinventory"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/baseline_add_circle_outline_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/lightcolor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp">
+
+
+                        <!-- Header TableLayout -->
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="?android:attr/dividerHorizontal"
+                            android:showDividers="beginning|middle|end"
+                            android:stretchColumns="1,2,3,4,5,6,7,8">
+
+                            <!-- TableRow 1 (Fixed Header) -->
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="CODE"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="ITEM NAME"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="ITEM TYPE"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="QTY"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="34dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="COST"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="RE-ORDER"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="NOTES"
+                                    android:textColor="@color/lightcolor" />
+
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/selectednav"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"
+                                    android:text=""
+                                    android:textColor="#4CAF50" />
+
+
+                                <!-- Add more TextViews for additional columns -->
+                            </TableRow>
+                        </TableLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/inventoryRV"
+                            android:layout_marginTop="36dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

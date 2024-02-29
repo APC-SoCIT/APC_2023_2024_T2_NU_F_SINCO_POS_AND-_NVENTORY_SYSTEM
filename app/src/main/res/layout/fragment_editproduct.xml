@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editproducts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="32dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/baseline_arrow_forward_24"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingTop="-6dp"
+                android:rotationY="-180" />
+
+            <TextView
+                android:id="@+id/productsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andadapro_bold"
+                android:text="Edit Products"
+                android:textColor="@color/black"
+                android:textSize="38sp" />
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="291dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/searchbar"
+                android:padding="4dp"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@null"
+                app:queryHint="Search" />
+
+        </LinearLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/addedProductsRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@android:color/white"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:spanCount="4" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="3dp"
+                            android:fontFamily="@font/andadapro_bold"
+                            android:text="Archived Products"
+                            android:textSize="21dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/archivedProducts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@android:color/white"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:spanCount="4" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+</RelativeLayout>
